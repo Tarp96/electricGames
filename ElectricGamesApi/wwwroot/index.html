@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css" type="text/css">
+    <title>ELectric Game Api</title>
+  </head>
+  <body>
+    <header>
+      <h1>🎮 Electric Games API 🎮</h1>
+    </header>
+    
+
+    <main>
+    <section class="informationSection">
+      <h2>Welcome to the Electric Game API</h2>
+      <p>
+        Hello Electric Games, thank you for giving us the task to set up your
+        API! <br />
+
+        This API contains information about various different vidoe games. About
+        every game in the database you will find <br />
+        information about the games: 
+        <ul>
+          <li class="firstList">Numerical ID</li>
+          <li class="firstList">Title</li>
+          <li class="firstList">Platform</li>
+          <li class="firstList">Year of Release</li>
+          <li class="firstList">Image</li>
+        </ul>
+      </p>
+    </section>
+
+    <section class="endPointSection">
+      <h2>Our Endpoints</h2>
+      <p>Currently we have 3 endpoints that allow you to get information from the database. To make changes to our database, use our Electric Game app!</p>
+      <ul class="informationList">
+
+        <li class="informationListItem">
+          <h2>Get All the Information</h2>
+          <p>This link allows you to see all the information in our database</p>
+          <p>Url: https://localhost:7272/ElectricGame</p>
+          <p class="buttonInformation">⬇ The button below takes you to: https://localhost:7272/ElectricGame ⬇ </p>
+
+          <a href="https://localhost:7272/ElectricGame" target="_blank" class="exampleLinks">Check it out!</a>
+        </li>
+
+        <li class="informationListItem">
+          <h2>Get Information for a game with a specific ID</h2>
+          <p>
+            This endpoint allows you to see the information for a game with an ID you or the user chooses. <br />
+            Replace the {id} in the url with a number and get the information for the video game that has the id that matches
+            your chosen number. The URL below will show you the information for Mario Kart 8! <br />
+            
+          </p>  
+          <p>The Url looks like this: https://localhost:7272/ElectricGame/{id}</p> 
+
+          <p class="buttonInformation">⬇ The button below takes you to: https://localhost:7272/ElectricGame/2" ⬇ </p>
+
+          <a class="exampleLinks" href="https://localhost:7272/ElectricGame/2" target="_blank">Check it out!</a>
+
+          
+          
+          
+        </li>
+
+
+        <li class="informationListItem">
+          <h2>Get a game based off its title</h2>
+          <p>
+            This method is similar to the previous one, but here you enter a title instead of the id. <br />
+            The URl also has an extra step with the /Get/ you have to add after ElectricGame. The Link below 
+            uses "Halo 3" to access our API and get data about Halo 3. NOTE! This method is case sensitive. 
+          
+          </p> <br />
+          <p>The Url looks like this: https://localhost:7272/ElectricGame/Get/{title}</p>
+          <p class="buttonInformation">The button below takes you to: https://localhost:7272/ElectricGame/Get/Halo%203</p>
+
+          <a href="https://localhost:7272/ElectricGame/Get/Halo%203" class="exampleLinks" target="_blank">Check it out!</a>
+
+          
+        </li>
+      </ul> 
+
+    </section>
+  </main>
+  </body>
+</html>

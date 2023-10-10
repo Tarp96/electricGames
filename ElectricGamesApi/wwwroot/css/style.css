@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    border-bottom: #fff 2px solid;
+}
+
+ul {
+    list-style: none;
+}
+
+.firstList{
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+section {
+    border: solid 2px black;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.exampleLinks {
+    background-color: rgb(102, 255, 102);;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 40px;
+}
+
+.exampleLinks:hover, .exampleLinksfocus {
+    cursor: pointer;
+    background-color: black;
+    color: rgb(102, 255, 102);
+    margin: 10px;
+}
+
+.buttonInformation {
+    background-color: black;
+    color: #fff;
+    width: 50%;
+    margin: 25px auto;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1em;
+
+}
+
+.informationListItem {
+    border: solid 2px #fff;
+    padding: 1em;
+    margin: 1em 0;
+}

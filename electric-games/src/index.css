@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/*NAVIGATION STYLING*/
+
+.myList {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #191414;
+  padding: 1em 0;
+  
+ }
+
+
+
+.routingListItem {
+  background-color: #66ff66;
+  list-style: none;
+  font-size: 28px;
+  padding: 0.2em 0.5em;
+  border-radius: 40px;
+}
+
+.routingListItem:hover, .routingListItem:focus{
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  border: solid 3px #66ff66;
+}
+
+/*NAVIGATION STYLING END*/
+
+
+
+
+/*IMAGE STYLING*/
+img {
+  width: 50%;
+  max-width: 600px;
+}
+/*IMAGE STYLING END*/
+
+
+
+/*SHOW GAME STYLING*/
+
+article {
+  border: solid 0.5px lightgray;
+}
+
+/*SHOW GAME STYLING END*/
+
+
+
+/*SEARCH PAGE STYLING */
+.searchForGamesDiv {
+  height: 100%;
+}
+.search-input {
+  max-width: 50%;
+  min-width: 300px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+/*SEARCH PAGE STYLING END*/
+
+
+
+
+/* ADD PAGE STYLING */
+form {
+  display: block;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.inputSection {
+  margin-bottom: 1.5em;
+}
+
+input {
+  text-align: center;
+  width: 90%;
+  border-radius: 40px;
+  padding: 10px;
+   
+}
+
+.successMessageP, .errorMessageP {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 50%;
+  margin: 10px auto;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.successMessageP {
+  background-color: green;
+}
+
+.errorMessageP {
+  background-color: red;
+}
+/* ADD PAGE STYLING END*/
+
+
+
+/*DELETE PAGE STYLING*/
+.labelDiv {
+  margin-bottom: 25px;
+}
+
+label {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.deleteInputBar {
+  width: 40%;
+  margin-bottom: 1em;
+}
+
+/*DELETE PAGE STYLING*/
+
+/*UPDATE PAGE STYLING*/
+
+.updateGameInput {
+  width: 90%;
+  max-width: 500px;
+  
+}
+
+
+/*UPDATE PAGE STYLING END*/
+
+
+/*QUIZ PAGE STYLING*/
+.question {
+  margin: 0 auto;
+  background-color: green;
+  width: 75%;
+  max-width: 800px;
+  min-width: 300px;
+  color: #fff;
+  border-radius: 25px;
+  padding: 1em;  
+  font-size: 1em;
+}
+
+.questionText {
+  font-size: 1.5em;
+}
+
+.answerOption {
+ border: solid 1px white;
+ width: 25%;
+ margin: 1em auto;
+ border-radius: 25px;
+ list-style: none;
+}
+
+
+.answerOption:hover, .answerOption:focus {
+  
+  font-weight: bold;
+  padding: 1em 0,5em;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.resultSection {
+   margin: 1em auto;
+   background-color: green;
+   color: #fff;
+   width: 40%;
+   max-width: 600px;
+   min-width: 300px;
+   border-radius: 25px;
+}
+
+.restartBtn {
+  margin-bottom: 1em;
+}
+
+
+/*QUIZ PAGE STYLING END*/
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width: 600px){
+  /*Navigation BAR*/
+  .myList {
+    display: block;
+   }
+
+   a {
+    font-size: 20px;
+    padding: 0.2em 0.5em;
+   }
+  
+   .routingListItem {
+    width: 30%;
+    min-width: 150px;
+    list-style: none; 
+    margin: 5px auto;
+    margin-bottom: 5px;
+  }
+
+  /*Navigation BAR*/
+
+  /*Add Games styling*/
+
+  .inputSection {
+    margin-bottom: 1em;
+  }
+
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+ /*Add Games styling end*/
+
+ /*Delete Game page styling*/
+
+.deleteLabel{
+  font-size: 25px;
+} 
+
+.deleteInputBar {
+  min-width: 290px;
+}
+
+ /*Delete Game page styling*/
+
+ /*Update game page styling*/
+.updateGameHeadline {
+  font-size: 24px;
+}
+
+.updateGameInput {
+  min-width: 250px;
+}
+
+.updateLabel{
+  font-size: 16px;
+}
+
+
+
+
+/*Update game page stylingend*/
+
+
+/*QUIZ page styling*/
+.quizMainHeadline {
+  font-size: 28px;
+}
+
+.quizSecondaryHeadline {
+  font-size: 20px;
+}
+
+.question {
+  width: 100%;
+  text-align: center;
+}
+
+.questionHeadline {
+  font-size: 20px;
+}
+
+.questionText {
+  font-size: 18px;
+}
+
+.answerOptionList {
+  display: grid;
+  justify-content: center;
+  width: 90%
+  
+}
+
+.answerOption {
+  font-size: 0.5em;
+  width: 100%;
+  padding: 1em;
+  
+}
+/*QUIZ page styling end*/
+} 
+/*First MEDIA QUERY END*/
+
+
+
+@media (min-width: 601px) and (max-width: 735px) {
+  /*NAV BAR*/
+  .myList {
+    display: block;
+    margin: 0 auto;
+    
+   }
+
+   a {
+    font-size: 22px;
+   }
+  
+  .routingListItem {
+    
+    width: 30%;
+    list-style: none; 
+    margin: 5px auto;
+  }
+
+  /*NAV BAR END*/
+
+
+
+  .search-input {
+    font-size: 16px;
+  }
+
+  /*Update Page styling*/
+  .updateGameHeadline {
+    font-size: 26px;
+  }
+
+
+  /*Update Page styling end*/
+
+
+
+  /*Quiz Page styling*/
+  .question {
+    width: 90%;
+  }
+
+  /*Quiz Page styling end*/
+}
+
+/*SECOND MEDIA QUERY END*/
+
+
+
